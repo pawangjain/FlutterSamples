@@ -175,14 +175,14 @@ packages:
       name: dson
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.13.1+1"
+    version: "0.13.2"
   dson_core:
     dependency: transitive
     description:
       name: dson_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.13.1"
+    version: "0.13.2"
   english_words:
     dependency: "direct main"
     description:

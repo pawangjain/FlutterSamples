@@ -2,11 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:dson/dson.dart';
-import 'package:teste_flutter/entities/euser.dart';
+import 'package:flutter_samples/entities/euser.dart';
 
-
-class UsersModel{
-
+class UsersModel {
   static void testaHttpClient() async {
     print('vai tentar rest');
 //    EUser e=new EUser();
@@ -14,14 +12,12 @@ class UsersModel{
 //    var result=toJson(e);
 //    print(result);
     var httpClient = new HttpClient();
-    var request = await httpClient.get(
-        "10.20.104.20", 5000, "/api/Values/GetByLogin/tezine");
+    var request = await httpClient.get("10.20.104.20", 5000, "/api/Values/GetByLogin/tezine");
     var response = await request.close();
     var responseBody = await response.transform(UTF8.decoder).join();
     print('chegou resposta:' + responseBody);
-    EUser eUser=fromJson(responseBody, EUser);
+    EUser eUser = fromJson(responseBody, EUser);
     print(eUser.name);
-
 
 //      List<EUser> list = fromJson(responseBody, [List, EUser]);
 //      if(list==null)print('nulo');

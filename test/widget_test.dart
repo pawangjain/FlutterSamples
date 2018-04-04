@@ -1,20 +1,17 @@
-//region imports
 // This is a basic Flutter widget test.
 // To perform an interaction with a widget in your test, use the WidgetTester utility that Flutter
 // provides. For example, you can send tap and scroll gestures. You can also use WidgetTester to
 // find child widgets in the widget tree, read text, and verify that the values of widget properties
 // are correct.
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_test/flutter_test.dart';
 
-import 'package:teste_flutter/main.dart';
-//endregion
+import 'package:flutter/material.dart';
+import 'package:flutter_samples/widgets/menu.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-//    await tester.pumpWidget(new MyApp());
+    await tester.pumpWidget(new Menu());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
@@ -27,14 +24,5 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
-  });
-
-  //For StorageKeyValue
-  const MethodChannel('plugins.flutter.io/shared_preferences')
-      .setMockMethodCallHandler((MethodCall methodCall) async {
-    if (methodCall.method == 'getAll') {
-      return <String, dynamic>{}; // set initial values here if desired
-    }
-    return null;
   });
 }

@@ -1,4 +1,4 @@
-package com.tezine.testeflutter
+package com.tezine.fluttersamples
 
 import android.os.Bundle
 

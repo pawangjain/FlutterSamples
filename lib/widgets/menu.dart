@@ -1,73 +1,73 @@
 //region imports
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:teste_flutter/widgets/animation/animation_demo.dart';
-import 'package:teste_flutter/widgets/animation/animations_fade.dart';
-import 'package:teste_flutter/widgets/appbar/appbar.dart';
-import 'package:teste_flutter/widgets/appbar/appbar_bottom.dart';
-import 'package:teste_flutter/widgets/calculator/calculator_demo.dart';
-import 'package:teste_flutter/widgets/colors_demo.dart';
-import 'package:teste_flutter/widgets/contacts_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_activity_indicator_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_buttons_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_dialog_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_navigation_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_picker_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_slider_demo.dart';
-import 'package:teste_flutter/widgets/cupertino/cupertino_switch_demo.dart';
-import 'package:teste_flutter/widgets/images/images_demo.dart';
-import 'package:teste_flutter/widgets/material/bottom_navigation_demo.dart';
-import 'package:teste_flutter/widgets/material/buttons_demo.dart';
-import 'package:teste_flutter/widgets/material/cards_demo.dart';
-import 'package:teste_flutter/widgets/custom_fonts.dart';
-import 'package:teste_flutter/widgets/gestures/dismiss_swipe.dart';
-import 'package:teste_flutter/widgets/gestures/gestures_tap.dart';
-import 'package:teste_flutter/widgets/images/images.dart';
-import 'package:teste_flutter/widgets/images/images_cached.dart';
-import 'package:teste_flutter/widgets/images/images_fading.dart';
-import 'package:teste_flutter/widgets/lists/lists_animated.dart';
-import 'package:teste_flutter/widgets/lists/lists_basic.dart';
-import 'package:teste_flutter/widgets/lists/lists_grid.dart';
-import 'package:teste_flutter/widgets/lists/lists_horizontal.dart';
-import 'package:teste_flutter/widgets/lists/lists_large.dart';
-import 'package:teste_flutter/widgets/lists/lists_mixed.dart';
-import 'package:teste_flutter/widgets/login.dart';
-import 'package:teste_flutter/widgets/material/chip_demo.dart';
-import 'package:teste_flutter/widgets/material/data_table_demo.dart';
-import 'package:teste_flutter/widgets/material/date_and_time_picker_demo.dart';
-import 'package:teste_flutter/widgets/material/dialog_demo.dart';
-import 'package:teste_flutter/widgets/material/drawer_demo.dart';
-import 'package:teste_flutter/widgets/material/expansion_panels_demo.dart';
-import 'package:teste_flutter/widgets/material/grid_list_demo.dart';
-import 'package:teste_flutter/widgets/material/icons_demo.dart';
-import 'package:teste_flutter/widgets/material/leave_behind_demo.dart';
-import 'package:teste_flutter/widgets/material/list_demo.dart';
-import 'package:teste_flutter/widgets/material/menu_demo.dart';
-import 'package:teste_flutter/widgets/material/modal_bottom_sheet_demo.dart';
-import 'package:teste_flutter/widgets/material/overscroll_demo.dart';
-import 'package:teste_flutter/widgets/material/page_selector_demo.dart';
-import 'package:teste_flutter/widgets/material/persistent_bottom_sheet_demo.dart';
-import 'package:teste_flutter/widgets/material/progress_indicator_demo.dart';
-import 'package:teste_flutter/widgets/material/scrollable_tabs_demo.dart';
-import 'package:teste_flutter/widgets/material/selection_controls_demo.dart';
-import 'package:teste_flutter/widgets/material/slider_demo.dart';
-import 'package:teste_flutter/widgets/material/snack_bar_demo.dart';
-import 'package:teste_flutter/widgets/material/tabs_demo.dart';
-import 'package:teste_flutter/widgets/material/tabs_fab_demo.dart';
-import 'package:teste_flutter/widgets/material/text_form_field_demo.dart';
-import 'package:teste_flutter/widgets/material/tooltip_demo.dart';
-import 'package:teste_flutter/widgets/material/two_level_list_demo.dart';
-import 'package:teste_flutter/widgets/navigation/navigation_return_data.dart';
-import 'package:teste_flutter/widgets/pesto_demo.dart';
-import 'package:teste_flutter/widgets/ripple.dart';
-import 'package:teste_flutter/widgets/shrine/shrine_demo.dart';
-import 'package:teste_flutter/widgets/storage/storage_file.dart';
-import 'package:teste_flutter/widgets/storage/storage_key_value.dart';
-import 'package:teste_flutter/widgets/tabbar_sample.dart';
-import 'package:teste_flutter/widgets/textfield.dart';
-import 'package:teste_flutter/widgets/theme_sample.dart';
-import 'package:teste_flutter/widgets/typography_demo.dart';
-import 'package:teste_flutter/widgets/video_demo.dart';
+import 'package:flutter_samples/widgets/animation/animation_demo.dart';
+import 'package:flutter_samples/widgets/animation/animations_fade.dart';
+import 'package:flutter_samples/widgets/appbar/appbar.dart';
+import 'package:flutter_samples/widgets/appbar/appbar_bottom.dart';
+import 'package:flutter_samples/widgets/calculator/calculator_demo.dart';
+import 'package:flutter_samples/widgets/colors_demo.dart';
+import 'package:flutter_samples/widgets/contacts_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_activity_indicator_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_buttons_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_dialog_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_navigation_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_picker_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_slider_demo.dart';
+import 'package:flutter_samples/widgets/cupertino/cupertino_switch_demo.dart';
+import 'package:flutter_samples/widgets/custom_fonts.dart';
+import 'package:flutter_samples/widgets/gestures/dismiss_swipe.dart';
+import 'package:flutter_samples/widgets/gestures/gestures_tap.dart';
+import 'package:flutter_samples/widgets/images/images.dart';
+import 'package:flutter_samples/widgets/images/images_cached.dart';
+import 'package:flutter_samples/widgets/images/images_demo.dart';
+import 'package:flutter_samples/widgets/images/images_fading.dart';
+import 'package:flutter_samples/widgets/lists/lists_animated.dart';
+import 'package:flutter_samples/widgets/lists/lists_basic.dart';
+import 'package:flutter_samples/widgets/lists/lists_grid.dart';
+import 'package:flutter_samples/widgets/lists/lists_horizontal.dart';
+import 'package:flutter_samples/widgets/lists/lists_large.dart';
+import 'package:flutter_samples/widgets/lists/lists_mixed.dart';
+import 'package:flutter_samples/widgets/login.dart';
+import 'package:flutter_samples/widgets/material/bottom_navigation_demo.dart';
+import 'package:flutter_samples/widgets/material/buttons_demo.dart';
+import 'package:flutter_samples/widgets/material/cards_demo.dart';
+import 'package:flutter_samples/widgets/material/chip_demo.dart';
+import 'package:flutter_samples/widgets/material/data_table_demo.dart';
+import 'package:flutter_samples/widgets/material/date_and_time_picker_demo.dart';
+import 'package:flutter_samples/widgets/material/dialog_demo.dart';
+import 'package:flutter_samples/widgets/material/drawer_demo.dart';
+import 'package:flutter_samples/widgets/material/expansion_panels_demo.dart';
+import 'package:flutter_samples/widgets/material/grid_list_demo.dart';
+import 'package:flutter_samples/widgets/material/icons_demo.dart';
+import 'package:flutter_samples/widgets/material/leave_behind_demo.dart';
+import 'package:flutter_samples/widgets/material/list_demo.dart';
+import 'package:flutter_samples/widgets/material/menu_demo.dart';
+import 'package:flutter_samples/widgets/material/modal_bottom_sheet_demo.dart';
+import 'package:flutter_samples/widgets/material/overscroll_demo.dart';
+import 'package:flutter_samples/widgets/material/page_selector_demo.dart';
+import 'package:flutter_samples/widgets/material/persistent_bottom_sheet_demo.dart';
+import 'package:flutter_samples/widgets/material/progress_indicator_demo.dart';
+import 'package:flutter_samples/widgets/material/scrollable_tabs_demo.dart';
+import 'package:flutter_samples/widgets/material/selection_controls_demo.dart';
+import 'package:flutter_samples/widgets/material/slider_demo.dart';
+import 'package:flutter_samples/widgets/material/snack_bar_demo.dart';
+import 'package:flutter_samples/widgets/material/tabs_demo.dart';
+import 'package:flutter_samples/widgets/material/tabs_fab_demo.dart';
+import 'package:flutter_samples/widgets/material/text_form_field_demo.dart';
+import 'package:flutter_samples/widgets/material/tooltip_demo.dart';
+import 'package:flutter_samples/widgets/material/two_level_list_demo.dart';
+import 'package:flutter_samples/widgets/navigation/navigation_return_data.dart';
+import 'package:flutter_samples/widgets/pesto_demo.dart';
+import 'package:flutter_samples/widgets/ripple.dart';
+import 'package:flutter_samples/widgets/shrine/shrine_demo.dart';
+import 'package:flutter_samples/widgets/storage/storage_file.dart';
+import 'package:flutter_samples/widgets/storage/storage_key_value.dart';
+import 'package:flutter_samples/widgets/tabbar_sample.dart';
+import 'package:flutter_samples/widgets/textfield.dart';
+import 'package:flutter_samples/widgets/theme_sample.dart';
+import 'package:flutter_samples/widgets/typography_demo.dart';
+import 'package:flutter_samples/widgets/video_demo.dart';
 //endregion
 
 class Menu extends StatelessWidget {
@@ -89,8 +89,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    var materialListsExpandTile=_createExpansionTile(context, 'Lists', <Widget>[
+    var materialListsExpandTile = _createExpansionTile(context, 'Lists', <Widget>[
       _createListTile(context, 'Dismiss Swipe', new DismissSwipe()),
       _createListTile(context, 'GridList', new GridListDemo()),
       _createListTile(context, 'Leave Behind', new LeaveBehindDemo()),
@@ -103,7 +102,7 @@ class MyHomePage extends StatelessWidget {
       _createListTile(context, 'Lists Mixed', new ListsMixed()),
       _createListTile(context, 'Over Scroll', new OverscrollDemo()),
       _createListTile(context, 'Two Level List', new TwoLevelListDemo()),
-      ]);
+    ]);
 
     var materialExpandTile = _createExpansionTile(context, 'Material Widgets', <Widget>[
       _createListTile(context, 'AppBar', new Appbar()),
@@ -135,7 +134,6 @@ class MyHomePage extends StatelessWidget {
       _createListTile(context, 'TextField', new VTextField()),
       _createListTile(context, 'Text Form Field', new TextFormFieldDemo()),
       _createListTile(context, 'Tooltip', new TooltipDemo()),
-
     ]);
 
     var iosExpandTile = _createExpansionTile(context, 'iOS Widgets', <Widget>[
@@ -153,19 +151,19 @@ class MyHomePage extends StatelessWidget {
       _createListTile(context, 'Fade', new AnimationFade()),
     ]);
 
-    var storageExpandTile=_createExpansionTile(context, 'Storage', <Widget>[
+    var storageExpandTile = _createExpansionTile(context, 'Storage', <Widget>[
       _createListTile(context, 'File', new StorageFile(storage: new CounterStorage())),
       _createListTile(context, 'Key/Value', new StorageKeyValue()),
-      ]);
+    ]);
 
-    var imagesExpandTile=_createExpansionTile(context, 'Images', <Widget>[
+    var imagesExpandTile = _createExpansionTile(context, 'Images', <Widget>[
       _createListTile(context, 'Images', new ImagesSample()),
       _createListTile(context, 'Images Cached', new ImagesCached()),
       _createListTile(context, 'Images Animated', new ImagesDemo()),
       _createListTile(context, 'Images Fading', new ImagesFading()),
-      ]);
+    ]);
 
-    var demosExpandTile=_createExpansionTile(context, 'Demos', <Widget>[
+    var demosExpandTile = _createExpansionTile(context, 'Demos', <Widget>[
       _createListTile(context, 'Calculator', new CalculatorDemo()),
       _createListTile(context, 'Colors', new ColorsDemo()),
       _createListTile(context, 'Contact Detail', new ContactsDemo()),
